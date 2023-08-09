@@ -16,6 +16,5 @@ class UsuarioModel(conexion.Model):
     telefono = Column(type_=types.Text, nullable=True)
     # en el ORM trabajar con CamelCase y en la base de datos con snake_case sirve para de una manera adicional proteger los verdaderos nombres de las columnas de la bd
     linkedinUrl = Column(name='linkedin_url', type_=types.Text)
-
     # __tablename__ > sirve para indicar el nombre de la tabla en la base datos, si no se le proporciona usara el nombre de la clase
     __tablename__ = 'usuarios'
